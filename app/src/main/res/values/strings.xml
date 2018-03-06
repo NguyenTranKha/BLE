@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BLE</string>
+    <string name="todo">TODO</string>
+    <string name="hc_05">HC-05</string>
+</resources>

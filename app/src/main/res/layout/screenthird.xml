@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sbg"
+        android:src="@drawable/uit" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Bluetooth Control Panel"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvr"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Red"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/tvb"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Blue"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/tvg"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="Green"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"/>
+
+
+    <Switch
+        android:id="@+id/switchr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:text="RED" />
+
+    <Switch
+        android:id="@+id/switchb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="50dp"
+        android:text="BLUE" />
+
+    <Switch
+        android:id="@+id/switchg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/switchb"
+        android:layout_alignParentEnd="true"
+        android:text="GREEN" />
+
+    <SeekBar
+        android:id="@+id/sbr"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:max ="31"
+        android:layout_below="@id/tvr"
+        android:thumb="@drawable/red" />
+
+    <SeekBar
+        android:id="@+id/sbb"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:max ="31"
+        android:layout_below="@id/tvb"
+        android:thumb="@drawable/blue"/>
+
+    <SeekBar
+        android:id="@+id/sbg"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:max ="31"
+        android:layout_below="@+id/tvg"
+        android:thumb="@drawable/green"/>
+
+
+</RelativeLayout>
